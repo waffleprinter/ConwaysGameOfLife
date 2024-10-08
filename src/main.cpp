@@ -21,17 +21,11 @@ int main() {
                     break;
             }
         }
+
+        window.clear();
+
+        window.display();
     }
 
-    // Update
-
-    // Render
-    window.clear(); // Clear old frame
-
-    // Draw game
-
-    window.display(); // Tells app that window is done drawing
-
-    // End of application
     return 0;
 }
