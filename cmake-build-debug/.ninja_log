@@ -1,11 +1,17 @@
 # ninja log v6
-4	609	7500654871549318	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
-596	679	7500647787877373	ConwaysGameOfLife.exe	66180ea7f3f0ed6d
-2	205	7500654904026690	build.ninja	defaa183a5f72a35
-5	570	7500655051901109	CMakeFiles/ConwaysGameOfLife.dir/src/Cell.cpp.obj	4ff7c82350b3c6fd
-570	662	7500655057551920	ConwaysGameOfLife.exe	d2f791a78f8a3f78
-9	593	7500658475328556	CMakeFiles/ConwaysGameOfLife.dir/src/Cell.cpp.obj	4ff7c82350b3c6fd
-5	611	7500658475288517	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
-612	703	7500658481350401	ConwaysGameOfLife.exe	d2f791a78f8a3f78
-5	602	7500660839186773	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
-603	686	7500660845168921	ConwaysGameOfLife.exe	d2f791a78f8a3f78
+5	627	7500986174060519	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
+736	838	7500986181372877	ConwaysGameOfLife.exe	3473ca7f4ea882e5
+2	214	7500986226902141	build.ninja	defaa183a5f72a35
+9	738	7500979890075912	CMakeFiles/ConwaysGameOfLife.dir/src/Cell.cpp.obj	4ff7c82350b3c6fd
+9	736	7500986174100557	CMakeFiles/ConwaysGameOfLife.dir/src/Board.cpp.obj	d0168d6b181cd59c
+5	726	7500990018029750	CMakeFiles/ConwaysGameOfLife.dir/src/Board.cpp.obj	d0168d6b181cd59c
+726	831	7500990025239538	ConwaysGameOfLife.exe	3473ca7f4ea882e5
+5	607	7500992451602192	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
+608	712	7500992457635710	ConwaysGameOfLife.exe	3473ca7f4ea882e5
+5	724	7500992617409424	CMakeFiles/ConwaysGameOfLife.dir/src/Board.cpp.obj	d0168d6b181cd59c
+724	827	7500992624600795	ConwaysGameOfLife.exe	3473ca7f4ea882e5
+6	666	7500993815285014	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
+10	767	7500993815325061	CMakeFiles/ConwaysGameOfLife.dir/src/Board.cpp.obj	d0168d6b181cd59c
+767	872	7500993822894320	ConwaysGameOfLife.exe	3473ca7f4ea882e5
+5	717	7500994313471455	CMakeFiles/ConwaysGameOfLife.dir/src/Board.cpp.obj	d0168d6b181cd59c
+718	821	7500994320602482	ConwaysGameOfLife.exe	3473ca7f4ea882e5

@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(ConwaysGameOfLife src/main.cpp
         src/Cell.cpp
-        headers/Cell.h)
+        headers/Cell.h
+        src/Board.cpp
+        headers/Board.h)
 
 include_directories(headers c:/SFML/include)
 
