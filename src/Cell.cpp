@@ -1,7 +1,8 @@
 #include "Cell.h"
 
-Cell::Cell(bool alive, sf::Vector2f position) {
+Cell::Cell(bool alive, float cellSize, sf::Vector2f position) {
     isAlive = alive;
+    size = cellSize;
     shape.setPosition(position);
     shape.setSize(sf::Vector2f(size, size));
     shape.setFillColor(isAlive ? sf::Color::Green : sf::Color::Black);

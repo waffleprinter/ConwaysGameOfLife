@@ -6,11 +6,11 @@
 class Cell {
 private:
     bool isAlive;
-    const float size = 5;
+    float size;
     sf::RectangleShape shape;
 
 public:
-    Cell(bool alive, sf::Vector2f position);
+    Cell(bool alive, float cellSize, sf::Vector2f position);
     void toggle();
     void draw(sf::RenderWindow &window);
 };
