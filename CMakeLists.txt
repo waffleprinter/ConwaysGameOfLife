@@ -3,7 +3,9 @@ project(ConwaysGameOfLife)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ConwaysGameOfLife src/main.cpp)
+add_executable(ConwaysGameOfLife src/main.cpp
+        src/Cell.cpp
+        headers/Cell.h)
 
 include_directories(headers c:/SFML/include)
 

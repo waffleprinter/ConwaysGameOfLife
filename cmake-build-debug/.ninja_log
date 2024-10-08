@@ -1,7 +1,9 @@
 # ninja log v6
-5	573	7500638284367527	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
-574	652	7500638290053366	ConwaysGameOfLife.exe	66180ea7f3f0ed6d
-2	196	7500645975808788	build.ninja	defaa183a5f72a35
-2	250	7500645975808788	build.ninja	defaa183a5f72a35
-7	592	7500646944646412	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
-592	670	7500646950497222	ConwaysGameOfLife.exe	66180ea7f3f0ed6d
+4	609	7500654871549318	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
+596	679	7500647787877373	ConwaysGameOfLife.exe	66180ea7f3f0ed6d
+2	205	7500654904026690	build.ninja	defaa183a5f72a35
+5	570	7500655051901109	CMakeFiles/ConwaysGameOfLife.dir/src/Cell.cpp.obj	4ff7c82350b3c6fd
+570	662	7500655057551920	ConwaysGameOfLife.exe	d2f791a78f8a3f78
+9	593	7500658475328556	CMakeFiles/ConwaysGameOfLife.dir/src/Cell.cpp.obj	4ff7c82350b3c6fd
+5	611	7500658475288517	CMakeFiles/ConwaysGameOfLife.dir/src/main.cpp.obj	2ea307649cd3960
+612	703	7500658481350401	ConwaysGameOfLife.exe	d2f791a78f8a3f78
