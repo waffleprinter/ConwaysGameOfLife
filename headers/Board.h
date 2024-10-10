@@ -15,6 +15,7 @@ private:
 
 public:
     Board(float cellSizeParam, int widthParam, int heightParam, sf::Vector2f pos);
+    int getLiveNeighbors(std::vector<std::vector<bool>> &cellStates, int row, int col) const;
     void update();
     void draw(sf::RenderWindow &window);
 };
