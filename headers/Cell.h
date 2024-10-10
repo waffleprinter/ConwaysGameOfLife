@@ -5,12 +5,14 @@
 
 class Cell {
 private:
-    bool isAlive;
     float size;
     sf::RectangleShape shape;
 
 public:
+    bool isAlive;
+
     Cell(bool alive, float cellSize, sf::Vector2f position);
+    sf::Vector2f getPosition();
     void toggle();
     void draw(sf::RenderWindow &window);
 };
