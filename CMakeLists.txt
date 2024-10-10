@@ -7,7 +7,9 @@ add_executable(ConwaysGameOfLife src/main.cpp
         src/Cell.cpp
         headers/Cell.h
         src/Board.cpp
-        headers/Board.h)
+        headers/Board.h
+        src/Game.cpp
+        headers/Game.h)
 
 include_directories(headers c:/SFML/include)
 
