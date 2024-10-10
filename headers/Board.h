@@ -11,9 +11,10 @@ private:
     float cellSize;
     int width;
     int height;
+    sf::Vector2f position;
 
 public:
-    Board(float cellSizeParam, int widthParam, int heightParam);
+    Board(float cellSizeParam, int widthParam, int heightParam, sf::Vector2f pos);
     void update();
     void draw(sf::RenderWindow &window);
 };
