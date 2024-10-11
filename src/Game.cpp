@@ -39,6 +39,18 @@ void Game::pollEvents() {
                     isPaused = true;
                 }
                 break;
+
+            case(sf::Event::MouseButtonPressed):
+                if (event.mouseButton.button == sf::Mouse::Left) {
+                    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+
+                    float cellSizeWithPadding = board.cellSize + 1;
+                    int col = mousePos.x / cellSizeWithPadding;
+                    int row = mousePos.y / cellSizeWithPadding;
+
+                    board.toggleCell(row, col);
+                }
+                break;
         }
     }
 }
