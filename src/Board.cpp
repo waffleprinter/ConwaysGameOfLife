@@ -45,6 +45,10 @@ int Board::getLiveNeighbors(std::vector<std::vector<bool>> &cellStates, int row,
     return liveNeighbors;
 }
 
+void Board::toggleCell(int row, int col) {
+    cells[row][col].toggle();
+}
+
 void Board::update() {
     // Temporary variable so that all later cell state changes will be done at the same time,
     // and will not accidentally be affected by changes done to other cells while iterating.
