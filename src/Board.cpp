@@ -16,7 +16,7 @@ Board::Board(float cellSizeParam, int widthParam, int heightParam, sf::Vector2f 
             float cellX = col * (cellSize + 1) + position.x;
             float cellY = row * (cellSize + 1) + position.y;
 
-            Cell cell = Cell(true, cellSize, sf::Vector2f(cellX, cellY));
+            Cell cell = Cell(false, cellSize, sf::Vector2f(cellX, cellY));
             cellsRow.push_back(cell);
         }
 
