@@ -31,12 +31,17 @@ void Game::pollEvents() {
             case (sf::Event::KeyPressed):
                 if (event.key.code == sf::Keyboard::Escape)
                     window.close();
+                else if (event.key.code == sf::Keyboard::Space)
+                    isPaused = !isPaused;
+
                 break;
         }
     }
 }
 
 void Game::update() {
+    if (isPaused) return;
+
     board.update();
 }
 
