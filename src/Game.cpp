@@ -33,7 +33,11 @@ void Game::pollEvents() {
                     window.close();
                 else if (event.key.code == sf::Keyboard::Space)
                     isPaused = !isPaused;
-
+                else if (event.key.code == sf::Keyboard::Right && isPaused) {
+                    isPaused = false;
+                    update();
+                    isPaused = true;
+                }
                 break;
         }
     }
