@@ -8,10 +8,6 @@ Cell::Cell(bool alive, float cellSize, sf::Vector2f position) {
     shape.setFillColor(isAlive ? sf::Color::Green : sf::Color::Black);
 }
 
-sf::Vector2f Cell::getPosition() {
-    return shape.getPosition();
-}
-
 void Cell::toggle() {
     isAlive = !isAlive;
     shape.setFillColor(isAlive ? sf::Color::Green : sf::Color::Black);
