@@ -45,6 +45,10 @@ int Board::getLiveNeighbors(std::vector<std::vector<bool>> &cellStates, int row,
     return liveNeighbors;
 }
 
+sf::Vector2f Board::getPosition() {
+    return position;
+}
+
 void Board::toggleCell(int row, int col) {
     cells[row][col].toggle();
 }

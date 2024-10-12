@@ -19,6 +19,7 @@ public:
 
     Board(float cellSizeParam, int widthParam, int heightParam, sf::Vector2f pos);
 
+    sf::Vector2f getPosition();
     void toggleCell(int row, int col);
     void update();
     void draw(sf::RenderWindow &window);
