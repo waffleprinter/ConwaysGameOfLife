@@ -21,6 +21,7 @@ public:
 
     sf::Vector2f getPosition();
     void toggleCell(int row, int col);
+    void clear();
     void update();
     void draw(sf::RenderWindow &window);
 };

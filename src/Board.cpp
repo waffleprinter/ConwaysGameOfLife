@@ -53,6 +53,15 @@ void Board::toggleCell(int row, int col) {
     cells[row][col].toggle();
 }
 
+void Board::clear() {
+    for (std::vector<Cell> &row : cells) {
+        for (Cell &cell : row) {
+            if (cell.isAlive)
+                cell.toggle();
+        }
+    }
+}
+
 void Board::update() {
     // Temporary variable so that all later cell state changes will be done at the same time,
     // and will not accidentally be affected by changes done to other cells while iterating.
