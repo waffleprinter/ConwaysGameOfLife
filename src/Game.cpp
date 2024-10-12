@@ -6,19 +6,23 @@ Game::Game() {
 }
 
 void Game::initWindow() {
-    videoMode.width = 720;
-    videoMode.height = 480;
+    videoMode.width = 1080;
+    videoMode.height = 720;
 
     window.create(videoMode, "Conway's Game of Life", sf::Style::Titlebar | sf::Style::Close);
 }
 
 void Game::initBoard() {
-    float cellSize = 5.0f;
-    float cellSizeWithPadding = cellSize + 1;
-    int rows = videoMode.height / cellSizeWithPadding;
-    int cols = videoMode.width / cellSizeWithPadding;
+    float cellSize = 10.0f;
+    float cellPadding = 1.0f;
+    int rows = 50;
+    int cols = 50;
 
-    board = Board(cellSize, cols, rows, sf::Vector2f(0, 0));
+    sf::Vector2f windowCenter;
+    windowCenter.x = ((float)videoMode.width - (cellSize + cellPadding) * (float)cols) / 2;
+    windowCenter.y = ((float)videoMode.height - (cellSize + cellPadding) * (float)rows) / 2;
+
+    board = Board(cellSize, cols, rows, windowCenter);
 }
 
 void Game::pollEvents() {
@@ -43,10 +47,11 @@ void Game::pollEvents() {
             case(sf::Event::MouseButtonPressed):
                 if (event.mouseButton.button == sf::Mouse::Left) {
                     sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+                    sf::Vector2f boardPos = board.getPosition();
 
                     float cellSizeWithPadding = board.cellSize + 1;
-                    int col = mousePos.x / cellSizeWithPadding;
-                    int row = mousePos.y / cellSizeWithPadding;
+                    int col = (mousePos.x - boardPos.x) / cellSizeWithPadding;
+                    int row = (mousePos.y - boardPos.y) / cellSizeWithPadding;
 
                     board.toggleCell(row, col);
                 }
